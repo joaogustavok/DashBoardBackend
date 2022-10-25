@@ -12,8 +12,8 @@ import java.util.Date;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "dim_filme")
-public class Filme {
+@Table(name = "dim_loja")
+public class Loja {
 
     @Id
     @Column(name = "id")
@@ -29,21 +29,18 @@ public class Filme {
     @Column(name = "date_to")
     private Date dateTo;
 
-    @Column(name = "idoriginal_filme")
+    @Column(name = "idoriginal_loja")
     private Long idOriginal;
 
-    @Column(name = "nome_filme")
-    private String nome;
+    @Column(name = "gerente_loja")
+    private String gerente;
 
-    @Column(name = "idiomaoriginal_filme")
-    private Long idIdioma;
+    @Column(name = "bairro_loja")
+    private String bairro;
 
-    @Column(name = "categoria_filme")
-    private String categoria;
+    @Column(name = "cidade_loja")
+    private String cidade;
 
-    @Column(name = "vlraluguel_filme")
-    private Double valorAluguel;
-
-    @Column(name = "anolancamento_filme")
-    private Integer anoLancamento;
+    @Column(name = "pais_loja")
+    private String pais;
 }
